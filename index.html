@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML Öğrenenler Formu</title>
+  <script type="module" src="form.js"></script>
+</head>
+<body>
+  <h2>HTML Öğrenenler Formu</h2>
+  <form id="form">
+    <label>İsminiz:</label><br />
+    <input type="text" name="isim" required /><br /><br />
+
+    <label>Kanala abone misin?</label><br />
+    <select name="abone" required>
+      <option value="evet">Evet</option>
+      <option value="hayır">Hayır</option>
+    </select><br /><br />
+
+    <label>Sitenizin linki:</label><br />
+    <input type="text" name="link" required /><br /><br />
+
+    <label>HTML Kodunuz:</label><br />
+    <textarea name="kod" rows="5" required></textarea><br /><br />
+
+    <button type="submit">Gönder</button>
+  </form>
+
+  <div id="sonuc"></div>
+</body>
+</html>
